@@ -1,12 +1,10 @@
 //your JS code here. If required.
-let para= document.getElementById("status");
-let btn= document.getElementById("enterBtn");
+function changeContent () {
+	let p = document.getElementById("status");
+    let newElm = document.createElement("h1");
+	p.innerText = newElm;
+	p.innerText = "Entered Metaverse";
+
+}
 
 
-button.addEventListener("click", () =>{
-	let h1= document.createElement("h1");
-	h1.id = "status";
-	h1.innerText = "Entered Metaverse";
-	document.body.insertBefore(h1 , para);
-	para.remove();
-})
